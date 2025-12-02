@@ -6,6 +6,7 @@ import Price from './components/Price';
 import Description from './components/Description';
 import Image from './components/Image';
 function App() {
+  var name="farouk";
   return (
     <div>
       <Card style={{ width: '18rem' }}>
@@ -14,7 +15,12 @@ function App() {
         <Description />
         <Price />
       </Card>
+
+      {
+        name === "" ? <h2>Hello there</h2> : <h2>Hello {name} </h2>
+      }
     </div>
+
   );
 }
 
